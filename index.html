@@ -7,15 +7,15 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
   <style>
+    html { scroll-behavior: smooth; }
     body { background-color: #0d0d0d; color: #e6e6e6; }
     .accent { color: #ff6a00; }
-    .bg-accent { background-color: #ff6a00; }
-    .border-accent { border-color: #ff6a00; }
-    .btn { padding: .75rem 1.2rem; border-radius: .4rem; font-weight: bold; }
+    .btn { padding: .75rem 1.2rem; border-radius: .4rem; font-weight: bold; transition: all 0.3s; }
     .btn-primary { background: #ff6a00; color: #fff; }
     .btn-primary:hover { background: #e55c00; }
     .btn-outline { border: 2px solid #ff6a00; color: #ff6a00; }
     .btn-outline:hover { background: #ff6a00; color: #fff; }
+    img:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; }
   </style>
 </head>
 
@@ -23,12 +23,10 @@
 
   <!-- MENU LATERAL -->
   <aside class="hidden md:flex flex-col w-64 h-screen bg-black border-r border-gray-800 fixed left-0 top-0 p-6">
-    
     <div class="flex flex-col items-center mb-10 text-center">
       <img src="jf.png" class="w-20 h-20 object-contain mb-3">
       <h2 class="text-lg font-bold accent">JF Educação e Treinamentos</h2>
     </div>
-
     <nav class="flex flex-col gap-4 text-sm">
       <a href="#cursos" class="hover:text-accent">Cursos</a>
       <a href="#sobre" class="hover:text-accent">Sobre</a>
@@ -53,7 +51,6 @@
           <h2 class="text-3xl font-extrabold leading-tight">
             Curso CLP Siemens S7-1200 <span class="accent">(TIA Portal V17)</span>
           </h2>
-
           <p class="mt-4 text-gray-300">
             Treinamento prático com CLP — ideal para quem deseja atuar em automação industrial.
           </p>
@@ -90,22 +87,26 @@
 
       <div class="grid md:grid-cols-2 gap-6">
 
-        <div class="border border-gray-800 p-6 rounded-lg bg-black">
-          <h4 class="text-xl font-bold accent">CLP Siemens S7-1200 — 16h</h4>
-          <p class="mt-2 text-gray-400">Curso prático com hardware real e redes industriais.</p>
-          <div class="mt-4 flex justify-between items-center">
+        <!-- CLP -->
+        <div class="rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 p-6">
+          <h4 class="text-xl font-bold accent mb-2">CLP Siemens S7-1200 — 16h</h4>
+          <p class="text-gray-300 mb-4">Curso prático com hardware real e redes industriais.</p>
+          <div class="flex flex-col gap-1 mb-4">
+            <span class="font-bold">R$400 parcelado</span>
             <span class="font-bold">R$300 à vista</span>
-            <a href="#contato" class="btn btn-primary">Inscrever</a>
           </div>
+          <a href="#contato" class="btn btn-primary w-full text-center">Inscrever</a>
         </div>
 
-        <div class="border border-gray-800 p-6 rounded-lg bg-black">
-          <h4 class="text-xl font-bold accent">NR10 — 40h</h4>
-          <p class="mt-2 text-gray-400">Segurança em Instalações e Serviços em Eletricidade</p>
-          <div class="mt-4 flex justify-between items-center">
-            <span class="font-bold">40h certificado</span>
-            <a href="#contato" class="btn btn-primary">Inscrever</a>
+        <!-- NR-10 e Reciclagem -->
+        <div class="rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 p-6">
+          <h4 class="text-xl font-bold accent mb-2">NR-10 — 40h</h4>
+          <p class="text-gray-300 mb-4">Segurança em Instalações e Serviços em Eletricidade</p>
+          <div class="flex flex-col gap-1 mb-4">
+            <span class="font-bold">R$200 — Curso NR-10 completo (40h)</span>
+            <span class="font-bold">R$150 — Curso de Reciclagem (20h)</span>
           </div>
+          <a href="#contato" class="btn btn-primary w-full text-center">Inscrever</a>
         </div>
 
       </div>
@@ -121,23 +122,17 @@
 
     <!-- CONTATO -->
     <section id="contato" class="max-w-6xl mx-auto px-6 mt-16 mb-24">
-      <h3 class="text-2xl font-bold accent mb-4">Contato</h3><br>
-      <p class="text-gray-300 mb-2">WhatsApp: (41) 98499-0902</p><br><br>
-      <a href="https://api.whatsapp.com/send?phone=5541984990902" class="btn btn-primary">Enviar mensagem</a>
+      <h3 class="text-2xl font-bold accent mb-4">Contato</h3>
+      <p class="text-gray-300 mb-6">WhatsApp: (41) 98499-0902</p>
+      <a href="https://api.whatsapp.com/send?phone=5541984990902" class="btn btn-primary w-full text-center">Enviar mensagem</a>
     </section>
 
     <!-- RODAPÉ -->
-    <footer class="border-t border-gray-800 bg-black p-6 text-center text-gray-500 text-sm">
-      © 2025 JF Educação — Todos os direitos reservados
+    <footer class="border-t border-gray-800 bg-black p-6 text-center text-gray-400">
+      &copy; 2025 JF Educação & Treinamentos. Todos os direitos reservados.
     </footer>
 
   </main>
-
-  <!-- BOTÃO WHATSAPP FLUTUANTE -->
-  <a href="https://api.whatsapp.com/send?phone=5541984990902"
-     class="fixed bottom-6 right-6 bg-accent text-white rounded-full p-4 shadow-lg font-bold text-lg">
-     💬
-  </a>
 
 </body>
 </html>
