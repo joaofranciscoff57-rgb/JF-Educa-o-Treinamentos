@@ -5,189 +5,146 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JF Educação & Treinamentos</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <meta name="description" content="Cursos de Automação Industrial, CLP Siemens S7-1200 e NR10, com certificado e prática real.">
-  <meta name="keywords" content="Automação, CLP, Siemens, S7-1200, NR10, Treinamento, Curso, IHM">
+
+  <style>
+    body { background-color: #0d0d0d; color: #e6e6e6; }
+    .accent { color: #ff6a00; }
+    .bg-accent { background-color: #ff6a00; }
+    .border-accent { border-color: #ff6a00; }
+    .btn { padding: .75rem 1.2rem; border-radius: .4rem; font-weight: bold; }
+    .btn-primary { background: #ff6a00; color: #fff; }
+    .btn-primary:hover { background: #e55c00; }
+    .btn-outline { border: 2px solid #ff6a00; color: #ff6a00; }
+    .btn-outline:hover { background: #ff6a00; color: #fff; }
+  </style>
 </head>
-<body class="bg-white text-gray-800 font-sans flex">
+
+<body class="font-sans flex">
 
   <!-- MENU LATERAL -->
-  <aside class="hidden md:flex flex-col w-64 h-screen bg-gray-100 border-r fixed left-0 top-0 p-6">
-    <div class="flex items-center gap-3 mb-8">
-      <img src="logo-jf.png" alt="Logo JF Educação e Treinamentos"
-           class="w-14 h-14 object-contain">
-      <div>
-        <h2 class="text-lg font-semibold">JF Educação</h2>
-        <p class="text-xs text-gray-600">Treinamentos</p>
-      </div>
+  <aside class="hidden md:flex flex-col w-64 h-screen bg-black border-r border-gray-800 fixed left-0 top-0 p-6">
+    
+    <div class="flex flex-col items-center mb-10 text-center">
+      <img src="jf.png" class="w-20 h-20 object-contain mb-3">
+      <h2 class="text-lg font-bold">JF Educação</h2>
+      <p class="text-xs text-gray-400 -mt-1">Treinamentos</p>
     </div>
 
-    <nav class="flex flex-col gap-3 text-sm">
-      <a href="#cursos" class="hover:text-blue-600">Cursos</a>
-      <a href="#sobre" class="hover:text-blue-600">Sobre</a>
-      <a href="#contato" class="hover:text-blue-600">Contato</a>
+    <nav class="flex flex-col gap-4 text-sm">
+      <a href="#cursos" class="hover:text-accent">Cursos</a>
+      <a href="#sobre" class="hover:text-accent">Sobre</a>
+      <a href="#contato" class="hover:text-accent">Contato</a>
     </nav>
-
-    <div class="mt-auto">
-      <a href="https://api.whatsapp.com/send?phone=5541984990902" target="_blank"
-         class="block mt-8 px-4 py-2 bg-green-600 text-white rounded-md text-center">
-        WhatsApp
-      </a>
-    </div>
   </aside>
 
-  <!-- CONTEÚDO PRINCIPAL -->
+  <!-- CONTEÚDO -->
   <main class="flex-1 md:ml-64">
 
-    <!-- Header com LOGO -->
-    <header class="p-6 border-b bg-white flex items-center gap-4">
-      <img src="logo-jf.png" alt="JF Educação e Treinamentos"
-           class="w-14 h-14 object-contain">
+    <!-- HEADER LOGO -->
+    <header class="p-6 border-b border-gray-800 bg-black flex items-center gap-4">
+      <img src="jf.png" class="w-16 object-contain">
 
       <div>
-        <h1 class="text-2xl font-bold text-blue-700">JF Educação & Treinamentos</h1>
-        <p class="text-sm text-gray-600">Cursos em Automação Industrial</p>
+        <h1 class="text-2xl font-bold accent">JF Educação & Treinamentos</h1>
+        <p class="text-sm text-gray-400">Formação em Automação Industrial</p>
       </div>
     </header>
 
-    <!-- Hero -->
-    <section class="max-w-6xl mx-auto px-6 mt-6">
-      <div class="grid md:grid-cols-2 gap-8 items-center">
+    <!-- HERO -->
+    <section class="max-w-6xl mx-auto px-6 mt-10">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+
         <div>
-          <h2 class="text-3xl font-extrabold leading-tight">Curso CLP Siemens S7-1200 <span class="text-blue-600">(TIA Portal V17)</span></h2>
-          <p class="mt-4 text-gray-600">Treinamento prático com CLP e IHM reais — ideal para profissionais e alunos que desejam atuar com automação industrial.</p>
-          <ul class="mt-6 space-y-2 text-sm text-gray-700">
-            <li>✅ Duração: 16 horas (presencial)</li>
-            <li>✅ Valor: R$300 à vista / R$400 parcelado</li>
-            <li>✅ Turmas aos sábados (manhã e tarde)</li>
-            <li>✅ Apostila e certificado</li>
+          <h2 class="text-3xl font-extrabold leading-tight">
+            Curso CLP Siemens S7-1200 <span class="accent">(TIA Portal V17)</span>
+          </h2>
+
+          <p class="mt-4 text-gray-300">
+            Treinamento prático com CLP e IHM reais — ideal para quem deseja atuar em automação industrial.
+          </p>
+
+          <ul class="mt-5 space-y-2 text-sm text-gray-400">
+            <li>✅ 16h presenciais</li>
+            <li>✅ Turmas aos sábados</li>
+            <li>✅ Certificado + apostila</li>
           </ul>
+
           <div class="mt-6 flex gap-3">
-            <a href="#contato" class="px-5 py-3 bg-blue-600 text-white rounded-md">Inscreva-se</a>
-            <a href="https://api.whatsapp.com/send?phone=5541984990902" target="_blank" class="px-5 py-3 border rounded-md">Falar no WhatsApp</a>
+            <a href="#contato" class="btn btn-primary">Inscreva-se</a>
+            <a href="https://api.whatsapp.com/send?phone=5541984990902" target="_blank" class="btn btn-outline">WhatsApp</a>
           </div>
         </div>
 
-        <div class="flex flex-col items-center bg-gray-50 p-6 rounded-lg border">
-          <div class="flex flex-col md:flex-row gap-8 w-full justify-center">
-            <div class="flex-1 flex flex-col items-center">
-              <h3 class="text-center font-bold mb-2 text-lg">CLP-S7 1200</h3>
-              <img src="CLP.webp" alt="CLP Siemens S7-1200" class="w-full max-w-xs rounded shadow-sm">
+        <div class="bg-black border border-gray-800 p-6 rounded-lg">
+          <div class="grid grid-cols-1 gap-8">
+            <div class="text-center">
+              <h3 class="font-bold mb-2 accent">CLP S7-1200</h3>
+              <img src="CLP.webp" class="rounded shadow w-60 mx-auto">
             </div>
-            <div class="flex-1 flex flex-col items-center">
-              <h3 class="text-center font-bold mb-2 text-lg">IHM (Interface Homem Máquina)</h3>
-              <img src="IHM.webp" alt="IHM Siemens" class="w-full max-w-xs rounded shadow-sm">
+            <div class="text-center">
+              <h3 class="font-bold mb-2 accent">IHM Siemens</h3>
+              <img src="IHM.webp" class="rounded shadow w-60 mx-auto">
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- Cursos -->
-    <section id="cursos" class="max-w-6xl mx-auto px-6 mt-12">
-      <h3 class="text-2xl font-bold mb-6">Cursos</h3>
+    <!-- CURSOS -->
+    <section id="cursos" class="max-w-6xl mx-auto px-6 mt-16">
+      <h3 class="text-2xl font-bold accent mb-6">Cursos Disponíveis</h3>
+
       <div class="grid md:grid-cols-2 gap-6">
-        <article class="p-6 border rounded-lg">
-          <h4 class="text-xl font-semibold">CLP Siemens S7-1200 (TIA Portal V17) — 16h</h4>
-          <p class="mt-2 text-gray-600">Conteúdo prático com CLP e IHM: conceitos, hardware, rede, programação ladder, diagnóstico e projeto final.</p>
-          <ul class="mt-4 text-sm space-y-1 text-gray-700">
-            <li>• Introdução ao TIA Portal V17</li>
-            <li>• Arquitetura do S7-1200 e módulos</li>
-            <li>• I/O, timers, counters, blocos de função</li>
-            <li>• Comunicação HMI e redes PROFINET</li>
-            <li>• Projeto prático final com CLP físico</li>
-          </ul>
-          <div class="mt-4 flex items-center justify-between">
-            <div>
-              <div class="text-sm text-gray-500">Preço:</div>
-              <div class="font-bold">R$300 à vista • R$400 parcelado</div>
-            </div>
-            <a href="#contato" class="px-4 py-2 bg-blue-600 text-white rounded-md">Quero me inscrever</a>
-          </div>
-        </article>
 
-        <article class="p-6 border rounded-lg">
-          <h4 class="text-xl font-semibold">NR10 - Segurança elétrica — 40h</h4>
-          <p class="mt-2 text-gray-600">Curso teórico e prático sobre segurança em instalações elétricas, documentação, EPI e procedimentos.</p>
-          <ul class="mt-4 text-sm space-y-1 text-gray-700">
-            <li>• Riscos elétricos e medidas de proteção</li>
-            <li>• Procedimentos para trabalho seguro</li>
-            <li>• EPI, documentação e registro</li>
-            <li>• Simulações e estudos de caso</li>
-          </ul>
-          <div class="mt-4 flex items-center justify-between">
-            <div>
-              <div class="text-sm text-gray-500">Duração:</div>
-              <div class="font-bold">40 horas • Certificado incluso</div>
-            </div>
-            <a href="#contato" class="px-4 py-2 bg-blue-600 text-white rounded-md">Quero me inscrever</a>
+        <div class="border border-gray-800 p-6 rounded-lg bg-black">
+          <h4 class="text-xl font-bold accent">CLP Siemens S7-1200 — 16h</h4>
+          <p class="mt-2 text-gray-400">Curso prático com hardware real, IHM e redes industriais.</p>
+          <div class="mt-4 flex justify-between items-center">
+            <span class="font-bold">R$300 à vista</span>
+            <a href="#contato" class="btn btn-primary">Inscrever</a>
           </div>
-        </article>
+        </div>
+
+        <div class="border border-gray-800 p-6 rounded-lg bg-black">
+          <h4 class="text-xl font-bold accent">NR10 — 40h</h4>
+          <p class="mt-2 text-gray-400">Segurança em instalações elétricas com prática.</p>
+          <div class="mt-4 flex justify-between items-center">
+            <span class="font-bold">40h certificado</span>
+            <a href="#contato" class="btn btn-primary">Inscrever</a>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- Sobre -->
-    <section id="sobre" class="max-w-6xl mx-auto px-6 mt-12">
-      <h3 class="text-2xl font-bold mb-4">Sobre o Instrutor</h3>
-      <div class="flex flex-col md:flex-row gap-6 items-center">
-        <div class="w-36 h-36 bg-gray-100 rounded-lg flex items-center justify-center">Foto</div>
-        <div>
-          <h4 class="font-semibold">João Francisco Ferreira de Oliveira</h4>
-          <p class="text-sm text-gray-600 mt-1">Engenheiro Eletricista - CREA-PR 220214/D</p>
-          <p class="mt-3 text-gray-700">Com ampla experiência em projetos de automação e ensino prático, João Francisco ministra cursos presenciais e corporativos em automação industrial — com foco em aplicação real com CLP e IHM Siemens.</p>
-        </div>
-      </div>
+    <!-- SOBRE -->
+    <section id="sobre" class="max-w-6xl mx-auto px-6 mt-16">
+      <h3 class="text-2xl font-bold accent mb-4">Sobre o Instrutor</h3>
+      <p class="text-gray-300">
+        Engenheiro Eletricista CREA-PR 220214/D, especialista em automação industrial e PLC Siemens.
+      </p>
     </section>
 
-    <!-- Contato -->
-    <section id="contato" class="max-w-6xl mx-auto px-6 mt-12 mb-16">
-      <h3 class="text-2xl font-bold mb-4">Inscreva-se / Contato</h3>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="p-6 border rounded-lg">
-          <form onsubmit="event.preventDefault(); window.open('https://api.whatsapp.com/send?phone=5541984990902&text=' + encodeURIComponent('Olá JF Educação, gostaria de informações sobre os cursos.'))" class="space-y-4">
-            <div>
-              <label class="block text-sm font-medium">Nome</label>
-              <input class="mt-1 block w-full border rounded p-2" required />
-            </div>
-            <div>
-              <label class="block text-sm font-medium">Email</label>
-              <input type="email" class="mt-1 block w-full border rounded p-2" />
-            </div>
-            <div>
-              <label class="block text-sm font-medium">Telefone</label>
-              <input class="mt-1 block w-full border rounded p-2" />
-            </div>
-            <div>
-              <label class="block text-sm font-medium">Curso</label>
-              <select class="mt-1 block w-full border rounded p-2">
-                <option>CLP S7-1200</option>
-                <option>NR10 - Segurança elétrica</option>
-              </select>
-            </div>
-            <div>
-              <label class="block text-sm font-medium">Mensagem (opcional)</label>
-              <textarea class="mt-1 block w-full border rounded p-2" rows="3"></textarea>
-            </div>
-            <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded-md">Enviar pelo WhatsApp</button>
-          </form>
-          <div class="mt-6 text-sm text-gray-600">
-            <div>WhatsApp: <a href="https://api.whatsapp.com/send?phone=5541984990902" target="_blank">(41) 98499-0902</a></div>
-            <div class="mt-1">Local: Curitiba, PR</div>
-          </div>
-        </div>
-      </div>
+    <!-- CONTATO -->
+    <section id="contato" class="max-w-6xl mx-auto px-6 mt-16 mb-24">
+      <h3 class="text-2xl font-bold accent mb-4">Contato</h3><br>
+      <p class="text-gray-300 mb-2">WhatsApp: (41) 98499-0902</p><br><br>
+      <a href="https://api.whatsapp.com/send?phone=5541984990902" class="btn btn-primary">Enviar mensagem</a>
     </section>
 
-    <!-- Rodapé -->
-    <footer class="bg-gray-50 border-t mt-8">
-      <div class="max-w-6xl mx-auto p-6 flex flex-col md:flex-row items-center justify-between gap-4">
-        <div>
-          <div class="font-semibold">JF Educação & Treinamentos</div>
-          <div class="text-sm text-gray-600">© 2025 • Todos os direitos reservados</div>
-        </div>
-        <div class="text-sm text-gray-600">Instrutor: João Francisco Ferreira de Oliveira • CREA-PR 220214/D</div>
-      </div>
+    <!-- RODAPÉ -->
+    <footer class="border-t border-gray-800 bg-black p-6 text-center text-gray-500 text-sm">
+      © 2025 JF Educação — Todos os direitos reservados
     </footer>
 
   </main>
+
+  <!-- BOTÃO WHATSAPP FLUTUANTE -->
+  <a href="https://api.whatsapp.com/send?phone=5541984990902"
+     class="fixed bottom-6 right-6 bg-accent text-white rounded-full p-4 shadow-lg font-bold text-lg">
+     💬
+  </a>
+
 </body>
 </html>
