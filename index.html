@@ -4,7 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JF Educação & Treinamentos</title>
+
+  <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Font Awesome (Instagram) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
   <style>
     html { scroll-behavior: smooth; }
@@ -27,20 +32,35 @@
       <img src="jf.png" class="w-20 h-20 object-contain mb-3" alt="Logo JF Educação e Treinamentos">
       <h2 class="text-lg font-bold accent">JF Educação e Treinamentos</h2>
     </div>
+
     <nav class="flex flex-col gap-4 text-sm">
       <a href="#cursos" class="hover:text-accent">Cursos</a>
       <a href="#sobre" class="hover:text-accent">Sobre</a>
       <a href="#contato" class="hover:text-accent">Contato</a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/jf.eng95" target="_blank"
+         class="flex items-center gap-2 mt-6 text-pink-500 hover:text-pink-400">
+        <i class="fab fa-instagram"></i> @jf.eng95
+      </a>
     </nav>
   </aside>
 
   <!-- CONTEÚDO -->
   <main class="flex-1 md:ml-64">
 
-    <!-- HEADER LOGO -->
-    <header class="p-6 border-b border-gray-800 bg-black flex items-center gap-4">
-      <img src="jf.png" class="w-16 object-contain" alt="Logo JF Educação e Treinamentos">
-      <h1 class="text-2xl font-bold accent">JF Educação & Treinamentos</h1>
+    <!-- HEADER -->
+    <header class="p-6 border-b border-gray-800 bg-black flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <img src="jf.png" class="w-16 object-contain" alt="Logo JF Educação e Treinamentos">
+        <h1 class="text-2xl font-bold accent">JF Educação & Treinamentos</h1>
+      </div>
+
+      <!-- Instagram topo -->
+      <a href="https://www.instagram.com/jf.eng95" target="_blank"
+         class="text-pink-500 text-xl hover:text-pink-400">
+        <i class="fab fa-instagram"></i>
+      </a>
     </header>
 
     <!-- HERO -->
@@ -48,9 +68,10 @@
       <div class="grid md:grid-cols-2 gap-10 items-center">
 
         <div>
-          <h2 class="text-3xl font-extrabold leading-tight">
+          <h2 class="text-3xl font-extrabold">
             Curso CLP Siemens S7-1200 <span class="accent">(TIA Portal V17)</span>
           </h2>
+
           <p class="mt-4 text-gray-300">
             Treinamento prático com CLP — ideal para quem deseja atuar em automação industrial.
           </p>
@@ -61,143 +82,53 @@
             <li>✅ Certificado + apostila</li>
           </ul>
 
-          <div class="mt-6 flex gap-3">
-            <a href="https://api.whatsapp.com/send?phone=5541984990902&text=Ol%C3%A1!%20Quero%20me%20inscrever%20no%20curso%20CLP%20Siemens%20S7-1200." target="_blank" class="btn btn-primary">Inscreva-se</a>
-            <a href="https://api.whatsapp.com/send?phone=5541984990902" target="_blank" class="btn btn-outline">WhatsApp</a>
+          <div class="mt-6 flex gap-3 flex-wrap">
+            <a href="https://api.whatsapp.com/send?phone=5541984990902"
+               target="_blank" class="btn btn-primary">WhatsApp</a>
+
+            <a href="https://www.instagram.com/jf.eng95"
+               target="_blank" class="btn btn-outline">Instagram</a>
           </div>
         </div>
 
         <div class="bg-black border border-gray-800 p-6 rounded-lg text-center">
-          <div class="mb-6">
-            <h3 class="font-bold mb-2 accent">CLP S7-1200</h3>
-            <img src="CLP.webp" class="rounded shadow w-60 mx-auto" alt="CLP Siemens S7-1200">
-          </div>
-          <div>
-            <h3 class="font-bold mb-2 accent">IHM Siemens</h3>
-            <img src="IHM.webp" class="rounded shadow w-60 mx-auto" alt="IHM Siemens">
-          </div>
+          <h3 class="font-bold mb-2 accent">CLP S7-1200</h3>
+          <img src="CLP.webp" class="rounded shadow w-60 mx-auto">
         </div>
 
       </div>
-    </section>
-
-    <!-- AULA PRÁTICA -->
-    <section id="apresentacao" class="max-w-6xl mx-auto px-6 mt-16">
-      <h3 class="text-2xl font-bold accent mb-6 text-center">Aula Prática</h3>
-      <div class="flex justify-center">
-        <video controls class="rounded-lg shadow-lg w-full max-w-2xl">
-          <source src="video-apresentacao.mp4" type="video/mp4">
-          Seu navegador não suporta a reprodução de vídeo.
-        </video>
-      </div>
-    </section>
-
-    <!-- CURSOS -->
-    <section id="cursos" class="max-w-6xl mx-auto px-6 mt-16">
-      <h3 class="text-2xl font-bold accent mb-6">Cursos Disponíveis</h3>
-
-      <div class="grid md:grid-cols-2 gap-6">
-
-        <!-- CLP -->
-        <div class="rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 p-6">
-          <h4 class="text-xl font-bold accent mb-2">CLP Siemens S7-1200 — 16h</h4>
-          <p class="text-gray-300 mb-4">Curso prático com hardware real e redes industriais.</p>
-          <div class="flex flex-col gap-1 mb-4">
-            <span class="font-bold">R$500 parcelado</span>
-            <span class="font-bold">R$400 à vista</span>
-          </div>
-          <a href="https://api.whatsapp.com/send?phone=5541984990902&text=Quero%20me%20inscrever%20no%20Curso%20CLP%20Siemens%20S7-1200" target="_blank" class="btn btn-primary w-full text-center">Inscrever</a>
-        </div>
-
-        <!-- IHM -->
-        <div class="rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 p-6">
-          <h4 class="text-xl font-bold accent mb-2">IHM Siemens — 16h</h4>
-          <p class="text-gray-300 mb-4">Curso prático utilizando IHM Siemens no TIA Portal.</p>
-          <div class="flex flex-col gap-1 mb-4">
-            <span class="font-bold">R$500 parcelado</span>
-            <span class="font-bold">R$400 à vista</span>
-          </div>
-          <a href="https://api.whatsapp.com/send?phone=5541984990902&text=Quero%20me%20inscrever%20no%20Curso%20IHM%20Siemens" target="_blank" class="btn btn-primary w-full text-center">Inscrever</a>
-        </div>
-
-        <!-- NR-10 -->
-        <div class="rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 p-6">
-          <h4 class="text-xl font-bold accent mb-2">NR-10 — 40h</h4>
-          <p class="text-gray-300 mb-4">Segurança em Instalações e Serviços em Eletricidade</p>
-          <div class="flex flex-col gap-1 mb-4">
-            <span class="font-bold">R$300 — Curso NR-10 completo</span>
-            <span class="font-bold">R$150 — Reciclagem (20h)</span>
-          </div>
-          <a href="https://api.whatsapp.com/send?phone=5541984990902&text=Quero%20me%20inscrever%20no%20Curso%20NR-10" target="_blank" class="btn btn-primary w-full text-center">Inscrever</a>
-        </div>
-
-        <!-- NR-11 -->
-        <div class="rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 p-6">
-          <h4 class="text-xl font-bold accent mb-2">NR-11 — 8h</h4>
-          <p class="text-gray-300 mb-4">Transporte, Movimentação e Armazenagem de Materiais</p>
-          <span class="font-bold mb-4 block">R$100</span>
-          <a href="https://api.whatsapp.com/send?phone=5541984990902&text=Quero%20me%20inscrever%20no%20Curso%20NR-11" target="_blank" class="btn btn-primary w-full text-center">Inscrever</a>
-        </div>
-
-        <!-- NR-12 -->
-        <div class="rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 p-6">
-          <h4 class="text-xl font-bold accent mb-2">NR-12 — 8h</h4>
-          <p class="text-gray-300 mb-4">Segurança no Trabalho em Máquinas e Equipamentos</p>
-          <span class="font-bold mb-4 block">R$100</span>
-          <a href="https://api.whatsapp.com/send?phone=5541984990902&text=Quero%20me%20inscrever%20no%20Curso%20NR-12" target="_blank" class="btn btn-primary w-full text-center">Inscrever</a>
-        </div>
-
-        <!-- NR-18 -->
-        <div class="rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 p-6">
-          <h4 class="text-xl font-bold accent mb-2">NR-18 — 8h</h4>
-          <p class="text-gray-300 mb-4">Condições de Saúde e Segurança na Construção</p>
-          <span class="font-bold mb-4 block">R$100</span>
-          <a href="https://api.whatsapp.com/send?phone=5541984990902&text=Quero%20me%20inscrever%20no%20Curso%20NR-18" target="_blank" class="btn btn-primary w-full text-center">Inscrever</a>
-        </div>
-
-        <!-- NR-20 -->
-        <div class="rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 p-6">
-          <h4 class="text-xl font-bold accent mb-2">NR-20 — 16h</h4>
-          <p class="text-gray-300 mb-4">Segurança com Inflamáveis e Combustíveis</p>
-          <span class="font-bold mb-4 block">R$100</span>
-          <a href="https://api.whatsapp.com/send?phone=5541984990902&text=Quero%20me%20inscrever%20no%20Curso%20NR-20" target="_blank" class="btn btn-primary w-full text-center">Inscrever</a>
-        </div>
-
-        <!-- NR-33 -->
-        <div class="rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 p-6">
-          <h4 class="text-xl font-bold accent mb-2">NR-33 — 16h</h4>
-          <p class="text-gray-300 mb-4">Trabalho em Espaços Confinados</p>
-          <span class="font-bold mb-4 block">R$100</span>
-          <a href="https://api.whatsapp.com/send?phone=5541984990902&text=Quero%20me%20inscrever%20no%20Curso%20NR-33" target="_blank" class="btn btn-primary w-full text-center">Inscrever</a>
-        </div>
-
-        <!-- NR-35 -->
-        <div class="rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 p-6">
-          <h4 class="text-xl font-bold accent mb-2">NR-35 — 8h</h4>
-          <p class="text-gray-300 mb-4">Trabalho em Altura</p>
-          <span class="font-bold mb-4 block">R$100</span>
-          <a href="https://api.whatsapp.com/send?phone=5541984990902&text=Quero%20me%20inscrever%20no%20Curso%20NR-35" target="_blank" class="btn btn-primary w-full text-center">Inscrever</a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- SOBRE -->
-    <section id="sobre" class="max-w-6xl mx-auto px-6 mt-16">
-      <h3 class="text-2xl font-bold accent mb-4">Sobre o Instrutor</h3>
-      <p class="text-gray-300">Engenheiro Eletricista — CREA-PR 220214/D</p>
     </section>
 
     <!-- CONTATO -->
-    <section id="contato" class="max-w-6xl mx-auto px-6 mt-16 mb-24">
+    <section id="contato" class="max-w-6xl mx-auto px-6 mt-20 mb-24">
       <h3 class="text-2xl font-bold accent mb-4">Contato</h3>
-      <p class="text-gray-300 mb-6">WhatsApp: (41) 98499-0902</p>
-      <a href="https://api.whatsapp.com/send?phone=5541984990902&text=Ol%C3%A1!%20Tenho%20interesse%20em%20cursos." target="_blank" class="btn btn-primary w-full text-center">Enviar mensagem</a>
+
+      <p class="text-gray-300 mb-2">WhatsApp: (41) 98499-0902</p>
+
+      <p class="text-gray-300 mb-6">
+        Instagram:
+        <a href="https://www.instagram.com/jf.eng95" target="_blank"
+           class="text-pink-500 hover:underline">
+          @jf.eng95
+        </a>
+      </p>
+
+      <div class="flex gap-3 flex-wrap">
+        <a href="https://api.whatsapp.com/send?phone=5541984990902"
+           target="_blank" class="btn btn-primary">WhatsApp</a>
+
+        <a href="https://www.instagram.com/jf.eng95"
+           target="_blank" class="btn btn-outline">Instagram</a>
+      </div>
     </section>
 
     <!-- RODAPÉ -->
     <footer class="border-t border-gray-800 bg-black p-6 text-center text-gray-400">
-      &copy; 2025 JF Educação & Treinamentos. Todos os direitos reservados.
+      © 2025 JF Educação & Treinamentos <br>
+      <a href="https://www.instagram.com/jf.eng95"
+         target="_blank" class="text-pink-500 hover:underline">
+        Instagram: @jf.eng95
+      </a>
     </footer>
 
   </main>
